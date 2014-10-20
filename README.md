@@ -1,5 +1,5 @@
 #MX RangeSlider for CraftCMS
-MX RangeSlider is range fieldtype for ExpressionEngine 2 which helps you to create a really nice and user friendly range select elements.
+MX RangeSlider is range fieldtype for CraftCMS which helps you to create a really nice and user friendly range select elements.
 
 ![MX RangeSlider](images/mx-rangeslider-craft.gif)
 
