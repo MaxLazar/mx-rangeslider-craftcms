@@ -1,0 +1,3 @@
+{% import "_includes/forms" as forms %}
+
+<input type="text" id="{{ inputId }}" class="text fullwidth" name="{{ name }}" value="{{ value }}"  {% for field in SettingsFields %} data-{{field.name}}="{{settings[field.name]}}"{% endfor %} style="display: none;" />

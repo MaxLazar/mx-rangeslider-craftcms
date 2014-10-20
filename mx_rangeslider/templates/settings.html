@@ -1,0 +1,34 @@
+{% import "_includes/forms" as forms %}
+
+{% for field in SettingsFields %}
+
+    {%if field.type == "dropdown" %}
+        {{ forms.selectField({
+            label: field.label|t,
+            instructions: field.info|t,
+            id: field.name,
+            name: field.name,
+            options: field.options,
+            value: settings[field.name]
+      }) }}
+    {% endif %}
+
+    {%if field.type == "input" %}
+
+        {{ forms.textField({
+            label: field.label|t,
+            instructions: field.info|t,
+            id: field.name,
+            name: field.name,
+            value: settings[field.name],
+            translatable: true,
+            errors: ''
+        }) }}
+
+    {% endif %}
+
+    {%if field.type == "textarea" %}
+
+    {% endif %}
+
+{% endfor %}
